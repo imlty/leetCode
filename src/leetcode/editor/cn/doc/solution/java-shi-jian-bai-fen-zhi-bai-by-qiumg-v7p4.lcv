@@ -1,0 +1,23 @@
+### 解题思路
+
+此处撰写解题思路
+
+### 代码
+
+* java
+
+```java
+class Solution {
+    public int subtractProductAndSum(int n) {
+        int tmp=0;
+        int tmp2=1;
+        while(n>0){  
+            tmp2 =tmp2 *(n%10);
+            tmp +=n%10;
+            n=n/10;
+        }
+        return tmp2 - tmp;
+    }
+}
+```
+
